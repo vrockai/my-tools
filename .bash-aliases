@@ -1,0 +1,18 @@
+alias ls='ls --color=auto'
+alias man="TERMINFO=~/.terminfo/ LESS=C TERM=mostlike PAGER=less man"
+
+alias ms='mvn clean install -DskipTests=true'
+alias chrome-dev='google-chrome --disable-web-security'
+
+alias lvdsoff='xrandr --output LVDS1 --off'
+alias lvdson='xrandr --output LVDS1 --auto'
+
+alias radio_fm='mplayer http://icecast.stv.livebox.sk/fm_128.mp3'
+
+function findi {
+  find . -iname "*$1*"
+}
+
+function grepi {
+  grep -i "$1" * -R
+}
